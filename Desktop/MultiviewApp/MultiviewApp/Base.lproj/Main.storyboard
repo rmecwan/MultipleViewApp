@@ -47,6 +47,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="NhX-EB-JJl"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0Z-vt-Mm4">
                                 <rect key="frame" x="125" y="255" width="178" height="30"/>
@@ -57,6 +60,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="MUn-2L-dQ6"/>
+                                    <action selector="passwordField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="qUc-zv-DqZ"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVg-Uj-8cW">
                                 <rect key="frame" x="17" y="355" width="44" height="30"/>
@@ -113,7 +120,7 @@
                     <connections>
                         <outlet property="NameLabel" destination="ttd-5z-RUH" id="oVF-F8-ktA"/>
                         <outlet property="nameField" destination="dXr-17-LUk" id="PTW-7N-gX7"/>
-                        <outlet property="passwordField" destination="h0Z-vt-Mm4" id="G4H-1a-CWd"/>
+                        <outlet property="passwordField" destination="h0Z-vt-Mm4" id="Eim-zE-ggd"/>
                         <outlet property="passwordLabel" destination="sBl-0s-I4H" id="DTN-RG-L5O"/>
                         <outlet property="stateButton" destination="OVg-Uj-8cW" id="tKE-vh-jd0"/>
                         <outlet property="tabButton" destination="vwQ-EA-vS6" id="V44-B4-W8W"/>
@@ -151,7 +158,7 @@
         <!--Sports-->
         <scene sceneID="BCN-HR-0ed">
             <objects>
-                <viewController id="CCY-Qf-XCc" sceneMemberID="viewController">
+                <viewController id="CCY-Qf-XCc" customClass="SportsViewController" customModule="MultiviewApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nXJ-t7-nHF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,7 +174,7 @@
         <!--Map-->
         <scene sceneID="HfM-sT-kRh">
             <objects>
-                <viewController id="Szy-aX-zzD" sceneMemberID="viewController">
+                <viewController id="Szy-aX-zzD" customClass="MapViewController" customModule="MultiviewApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="67n-KH-ETu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,18 +190,50 @@
         <!--Name-->
         <scene sceneID="FTs-zn-ydT">
             <objects>
-                <viewController id="bgR-CZ-n9b" sceneMemberID="viewController">
+                <viewController id="bgR-CZ-n9b" customClass="NameViewController" customModule="MultiviewApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mCf-J6-wxb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SRj-8b-iCh">
+                                <rect key="frame" x="52" y="272" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B1U-rf-6JI">
+                                <rect key="frame" x="102.18399747207604" y="267.00000000000011" width="169.00000000000023" height="29.999999999999943"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameField:" destination="bgR-CZ-n9b" eventType="editingDidEnd" id="diw-8F-N6s"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OR-dr-4Z9">
+                                <rect key="frame" x="48" y="309" width="46" height="30.000000000000057"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Fyp-zC-WXZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="15u-Yp-10h"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Name" id="tqC-jP-jbL"/>
+                    <connections>
+                        <outlet property="backButton" destination="7OR-dr-4Z9" id="dky-je-cix"/>
+                        <outlet property="nameField" destination="B1U-rf-6JI" id="OWN-nP-VGK"/>
+                        <outlet property="nameLabel" destination="SRj-8b-iCh" id="AVj-vv-xNp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bma-uM-5Zj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2336" y="-302"/>
+            <point key="canvasLocation" x="2335.1999999999998" y="-302.6986506746627"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yu4-Al-zN0">
@@ -216,4 +255,7 @@
             <point key="canvasLocation" x="1384" y="28"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Fyp-zC-WXZ"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -16,6 +16,9 @@
 		70BFA85A2182AD2A00559910 /* MultiviewAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFA8592182AD2A00559910 /* MultiviewAppUITests.swift */; };
 		70BFA8682182AD3F00559910 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFA8672182AD3F00559910 /* States.swift */; };
 		70BFA86C2182BDA900559910 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFA86B2182BDA900559910 /* TabController.swift */; };
+		70BFA86E2182E10B00559910 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFA86D2182E10B00559910 /* NameViewController.swift */; };
+		70BFA8702182E14D00559910 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFA86F2182E14D00559910 /* SportsViewController.swift */; };
+		70BFA8722182E16100559910 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BFA8712182E16100559910 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		70BFA85B2182AD2A00559910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70BFA8672182AD3F00559910 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 		70BFA86B2182BDA900559910 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		70BFA86D2182E10B00559910 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		70BFA86F2182E14D00559910 /* SportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
+		70BFA8712182E16100559910 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				70BFA83B2182AD2900559910 /* ViewController.swift */,
 				70BFA8672182AD3F00559910 /* States.swift */,
 				70BFA83D2182AD2900559910 /* Main.storyboard */,
+				70BFA86D2182E10B00559910 /* NameViewController.swift */,
+				70BFA86F2182E14D00559910 /* SportsViewController.swift */,
+				70BFA8712182E16100559910 /* MapViewController.swift */,
 				70BFA8402182AD2A00559910 /* Assets.xcassets */,
 				70BFA8422182AD2A00559910 /* LaunchScreen.storyboard */,
 				70BFA8452182AD2A00559910 /* Info.plist */,
@@ -265,7 +274,10 @@
 				70BFA8682182AD3F00559910 /* States.swift in Sources */,
 				70BFA86C2182BDA900559910 /* TabController.swift in Sources */,
 				70BFA83C2182AD2900559910 /* ViewController.swift in Sources */,
+				70BFA8702182E14D00559910 /* SportsViewController.swift in Sources */,
 				70BFA83A2182AD2900559910 /* AppDelegate.swift in Sources */,
+				70BFA86E2182E10B00559910 /* NameViewController.swift in Sources */,
+				70BFA8722182E16100559910 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
